@@ -22,40 +22,27 @@
 				<div class="more"><img src="img/ic_more.svg" alt="사용 내역 보기" /></div>
 			</div>
 			<div class="box-white">
-				<p class="explain border-b p20">사용하실 쿠폰의 매수를 선택하고<br />QR생성 버튼을 눌러주세요.</p>
-				<div class="box-select">
-					<select>
-						<option selected>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-						<option>7</option>
-						<option>8</option>
-						<option>9</option>
-						<option>10</option>
-						<option>11</option>
-						<option>12</option>
-						<option>13</option>
-						<option>14</option>
-						<option>15</option>
-						<option>16</option>
-						<option>17</option>
-						<option>18</option>
-						<option>19</option>
-						<option>20</option>
-					</select>
-					<span class="txt">장</span>
+				<p class="explain border-b p20">본 화면을 직원에게 보여주시고<br /><span class="highlight">즉시 음료를 주문하세요.</span></p>
+				<div class="coupon-id num">NO. 28054926-2201111330-3</div>
+				<div class="wrap-coupon">
+					<div class="box-coupon">
+						<div class="coupon-num">
+							<span class="num">1</span>
+							<span class="txt">장</span>
+						</div>
+					</div>
 				</div>
+				<div class="date p20 num">2021년 12월 29일 14:25:00</div>
 				<div class="wrap-inbox-btn">
-					<button class="inbox-blue">QR 생성</button>
+					<button class="inbox-grey" onClick="location.href='index.html';">처음으로</button>
 				</div>
-			</div>
-			<div class="wrap-btn">
-				<button class="outbox-blue btn">쿠폰 사용 방법</button>
+				<div class="wrap-warn">
+					<img src="img/ic_warn.svg" alt="주의사항" />
+					<p>직원 확인 전, 본 화면을 닫으시면<br />주문하실 수 없으니 유의해주세요!</p>
+				</div>
 			</div>
 		</div>
+
 		<!-- 사용내역 모달 -->
 		<div class="wrap-layerpop modal">
 			<div class="wrap-list">
@@ -181,22 +168,6 @@
 			</div>
 		</div>
 		<!-- //사용내역 모달 -->
-
-		<!-- 사용방법 모달 -->
-		<div class="wrap-layerpop modal">
-			<div class="wrap-list">
-				<span class="pop-close close"><img src="img/ic_close.svg" alt="닫기" /></span>
-
-				<div class="pop-content">
-					<h4>쿠폰 사용이 처음이세요?</h4>
-					<div class="wrap-howto">
-						<img src="img/img_howto.svg" alt="쿠폰 사용 방법" />
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- //사용방법 모달 -->
-
 		<script type="text/javascript">
 			// Modal을 가져옵니다.
 			var modals = document.getElementsByClassName('modal');
