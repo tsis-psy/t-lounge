@@ -99,7 +99,7 @@ select:disabled {
 .wrap-page {
 	width: 100%;
 	height: auto;
-	padding: 5vw;
+	padding: 9vw 5vw 5vw 5vw;
 }
 body {
 	background-color: #f1f1f1;
@@ -419,9 +419,11 @@ body.login {
 
 .pop-content .wrap-howto {
 	width: 100%;
-	height: 65vh;
+	height: calc(100vh - 190px);
 	overflow-y: auto;
-	margin-top: 30px;
+	margin-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
 }
 .pop-content .wrap-howto img {
 	width: 100%;
@@ -429,9 +431,9 @@ body.login {
 
 .con-list {
 	width: 100%;
-	height: 60vh;
+	height: calc(100vh - 200px);
 	overflow-y: auto;
-	padding-right: 10px;
+	padding: 0 10px 40px 0;
 }
 .con-list li {
 	padding-bottom: 20px;
@@ -456,6 +458,16 @@ body.login {
 .con-list .when span {
 	font-weight: 600;
 }
+
+/* 사용내역없음 220125 추가 */
+.con-none {
+	width: 100%;
+	min-height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* 사용내역없음 220125 추가 End*/
 
 /* login */
 .wrap-login {
@@ -596,5 +608,182 @@ body.login {
 		color: #a4a4a4;
 		padding: 12px 0;
 		border-radius: 30px;
+	}
+
+	.pop-content .wrap-howto {
+		width: 100%;
+		height: calc(100vh - 170px);
+		overflow-y: auto;
+		margin-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+/* 220125 추가 */
+
+@media screen and (min-height: 640px) and (max-height: 740px) {
+	.box-white .box-select {
+		width: 100%;
+		padding: 60px 30px;
+		text-align: center;
+	}
+
+	.coupon-id {
+		width: 100%;
+		font-weight: 400;
+		text-align: center;
+		color: #999;
+		padding: 20px 0 16px;
+	}
+
+	.box-coupon {
+		margin: 0 auto;
+		position: relative;
+		background: url(../img/img_coupon.svg) no-repeat 50% 50%;
+		background-size: contain;
+		width: 75%;
+		min-height: 100px;
+	}
+
+	.date {
+		width: 100%;
+		font-size: 1em;
+		font-weight: 700;
+
+		text-align: center;
+	}
+
+	.wrap-inbox-btn {
+		width: 100%;
+		padding: 0 50px 20px;
+	}
+
+	.inbox-blue {
+		width: 100%;
+		font-size: 1em;
+		font-weight: 700;
+		background-color: #e8f4ff;
+		color: #2394fd;
+		padding: 12px 0;
+		border-radius: 30px;
+	}
+	.inbox-grey {
+		width: 100%;
+		font-size: 1em;
+		font-weight: 700;
+		background-color: #f1f1f1;
+		color: #a4a4a4;
+		padding: 12px 0;
+		border-radius: 30px;
+	}
+
+	.wrap-warn {
+		width: 100%;
+		background-color: #fff8f8;
+		text-align: center;
+		padding: 10px 0 20px;
+		border-radius: 0 0 20px 20px;
+	}
+	.wrap-warn p {
+		color: #d66363;
+		font-weight: 700;
+		line-height: 130%;
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-height: 800px) and (max-height: 1023px) {
+	.box-white .box-select {
+		width: 100%;
+		padding: 120px 30px;
+		text-align: center;
+	}
+
+	.wrap-warn {
+		width: 100%;
+		background-color: #fff8f8;
+		text-align: center;
+		padding: 20px 0 30px;
+		border-radius: 0 0 20px 20px;
+	}
+	.wrap-warn p {
+		color: #d66363;
+		font-weight: 700;
+		line-height: 130%;
+		font-size: 1em;
+	}
+
+	.wrap-inbox-btn {
+		width: 100%;
+		padding: 20px 50px 30px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+	.wrap-inbox-btn {
+		width: 100%;
+	}
+
+	.inbox-blue {
+		width: fit-content;
+		font-size: 1.2em;
+		font-weight: 700;
+		background-color: #e8f4ff;
+		color: #2394fd;
+		padding: 14px 60px;
+		border-radius: 30px;
+	}
+	.inbox-grey {
+		width: fit-content;
+		font-size: 1.2em;
+		font-weight: 700;
+		background-color: #f1f1f1;
+		color: #a4a4a4;
+		padding: 14px 60px;
+		border-radius: 30px;
+	}
+
+	.box-white .box-select {
+		width: 100%;
+		padding: 150px 30px;
+		text-align: center;
+	}
+
+	.box-coupon {
+		margin: 0 auto;
+		position: relative;
+		background: url(../img/img_coupon.svg) no-repeat 50% 50%;
+		background-size: contain;
+		width: 55%;
+		min-height: 180px;
+	}
+
+	.box-coupon .coupon-num {
+		position: absolute;
+		z-index: 999;
+		top: 30%;
+		left: 33%;
+		text-align: center;
+	}
+
+	.box-coupon .coupon-num span {
+		color: #2394fd;
+		font-size: 3em;
+		font-weight: 700;
+	}
+
+	.date {
+		width: 100%;
+		font-size: 1.5em;
+		font-weight: 700;
+		margin: 30px 0;
+		text-align: center;
+	}
+
+	.nocoupon img {
+		width: 45%;
+	}
+	.pop-content .wrap-howto img {
+		width: 45%;
 	}
 }
