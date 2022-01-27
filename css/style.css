@@ -99,7 +99,7 @@ select:disabled {
 .wrap-page {
 	width: 100%;
 	height: auto;
-	padding: 9vw 5vw 5vw 5vw;
+	padding: 34px 5vw 5vw 5vw;
 }
 body {
 	background-color: #f1f1f1;
@@ -150,7 +150,7 @@ body.login {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .wrap-user .user {
@@ -293,6 +293,10 @@ body.login {
 	line-height: 100%;
 	width: fit-content;
 	text-align: center;
+	text-align: -webkit-center;
+	text-align-last: center;
+	-ms-text-align-last: center;
+	-moz-text-align-last: center;
 	font-weight: 800;
 	background: url(../img/ic_select.svg) no-repeat 96% 30%;
 	padding: 0 30px 0 10px;
@@ -487,6 +491,7 @@ body.login {
 	margin-bottom: 10px;
 	padding: 10px 15px;
 	font-size: 16px;
+	font-family: 'roboto';
 }
 
 .save-id {
@@ -719,7 +724,7 @@ body.login {
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 744px) and (max-width: 1000px) {
 	.wrap-inbox-btn {
 		width: 100%;
 	}
@@ -762,6 +767,76 @@ body.login {
 		position: absolute;
 		z-index: 999;
 		top: 30%;
+		left: 33%;
+		text-align: center;
+	}
+
+	.box-coupon .coupon-num span {
+		color: #2394fd;
+		font-size: 3em;
+		font-weight: 700;
+	}
+
+	.date {
+		width: 100%;
+		font-size: 1.5em;
+		font-weight: 700;
+		margin: 30px 0;
+		text-align: center;
+	}
+
+	.nocoupon img {
+		width: 45%;
+	}
+	.pop-content .wrap-howto img {
+		width: 45%;
+	}
+}
+
+/* 220127추가 */
+@media screen and (min-width: 1001px) and (max-width: 1610px) {
+	.wrap-inbox-btn {
+		width: 100%;
+	}
+
+	.inbox-blue {
+		width: fit-content;
+		font-size: 1.2em;
+		font-weight: 700;
+		background-color: #e8f4ff;
+		color: #2394fd;
+		padding: 14px 60px;
+		border-radius: 30px;
+	}
+	.inbox-grey {
+		width: fit-content;
+		font-size: 1.2em;
+		font-weight: 700;
+		background-color: #f1f1f1;
+		color: #a4a4a4;
+		padding: 14px 60px;
+		border-radius: 30px;
+	}
+
+	.box-white .box-select {
+		width: 100%;
+		padding: 150px 30px;
+		text-align: center;
+	}
+
+	.box-coupon {
+		margin: 0 auto;
+		position: relative;
+		background: url(../img/img_coupon.svg) no-repeat 50% 50%;
+		background-size: contain;
+		width: 35%;
+		min-height: 200px;
+	}
+
+	.box-coupon .coupon-num {
+		position: absolute;
+		z-index: 999;
+		top: 31%;
 		left: 33%;
 		text-align: center;
 	}
